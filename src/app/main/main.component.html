@@ -1,0 +1,33 @@
+<main class="conversion-main" [formGroup]="reactiveForm" (change)="setUp()">
+  <section class="converter">
+    <h1 class="converter-title">Currency Converter</h1>
+    <p class="converter-text">
+      Check <span class="converter-text--white">live</span> foreign currency exchange rates
+    </p>
+    <div class="converter-options">
+      <select class="converter-select" formControlName="firstOption">
+        <option value="" selected disabled>--Select--</option>
+        <option *ngFor="let choice of choices" [value]="choice.name">
+          {{ choice.name }}
+        </option>
+      </select>
+      <div class="converter-helper">to</div>
+      <select class="converter-select" formControlName="secondOption">
+        <option value="" selected disabled>--Select--</option>
+        <option *ngFor="let choice of choices" [value]="choice.name">
+          {{ choice.name }}
+        </option>
+      </select>
+    </div>
+
+    <div class="converter-options">
+      <input class="converter-input" type="text" formControlName="number" />
+      <div class="converter-helper">=</div>
+      <input class="converter-input" placeholder="{{ resultList }}" type="text" />
+    </div>
+
+    <button class="converter-button" type="submit" (change)="setUp()">
+      Calculate
+    </button>
+  </section>
+</main>

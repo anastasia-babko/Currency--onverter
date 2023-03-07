@@ -1,0 +1,18 @@
+.conversion-header {
+  height: 60px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.19);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100vw;
+}
+
+.navigation-item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 24px;
+}

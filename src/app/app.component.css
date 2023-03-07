@@ -1,0 +1,8 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(46, 233, 186);
+  background: linear-gradient(90deg, rgba(46, 233, 186, 1) 0%, rgba(29, 221, 209, 1) 35%, rgba(73, 210, 238, 1) 100%);
+  overflow: hidden;
+}
