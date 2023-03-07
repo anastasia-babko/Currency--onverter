@@ -1,8 +1,10 @@
-# Newproj
+# Currency converter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
 You can Check foreign currency exchange rates at any time by simply selecting a currency and entering a number. Then press the button "Calculate" or enter on the keyboard and there you go!
+
+See demo here https://anastasia-babko.github.io/Currency--onverter/
 
 ## Development server
 
